@@ -1,0 +1,115 @@
+2025-12-03T21:26:19.890Z [INFO] ----------------------invoke generate_upgrade_plan----------------------
+2025-12-03T21:26:19.891Z [INFO] [Tool.invoke]({name: generate_upgrade_plan, input: {
+  "projectPath": "c:\\Users\\gerar\\Desktop\\Progetto Ingegneria del Software\\Test",
+  "targetJavaVersion": "21"
+}}).
+2025-12-03T21:26:19.894Z [INFO] [Plan.tryStartTask]({tool:generate_upgrade_plan, nextTask:{type:undefined, tool:undefined}}
+2025-12-03T21:26:19.894Z [INFO] [Plan.tryStartTask]: no next task, create new one.
+2025-12-03T21:26:19.895Z [INFO] [Plan.createTaskAtStart]({tool: generate_upgrade_plan, input: {
+  "projectPath": "c:\\Users\\gerar\\Desktop\\Progetto Ingegneria del Software\\Test",
+  "targetJavaVersion": "21",
+  "sessionId": "20251203212619"
+}}).
+2025-12-03T21:26:19.931Z [INFO] [Plan.tryStartTask]: starting task generatePlan
+2025-12-03T21:26:19.933Z [INFO] [Task.start](): Starting task generatePlan
+2025-12-03T21:26:19.935Z [INFO] [Task.start](1): Started task generatePlan
+2025-12-03T21:26:19.944Z [INFO] [Tool.invoke] validate GitHub Copilot license.
+2025-12-03T21:26:19.945Z [INFO] [Tool.invoke] do pre-invoke.
+2025-12-03T21:26:19.945Z [INFO] [Tool.invoke] do invoke.
+2025-12-03T21:26:20.453Z [INFO] [Task.start](): Starting task generatePlan
+2025-12-03T21:26:20.456Z [INFO] [Task.start](1.1): Started task generatePlan
+2025-12-03T21:26:20.457Z [INFO] ---------------------prepare install_jdk----------------------
+2025-12-03T21:26:20.458Z [INFO] [Tool.prepareInvocation]({name: install_jdk, input: {
+  "sessionId": "20251203212619",
+  "version": "11",
+  "dest": "C:\\Users\\gerar\\.jdk",
+  "reason": "JDK 11 is required to build the project, but not found on the machine."
+}}).
+2025-12-03T21:26:20.459Z [INFO] [Tool.prepareInvocation] do prepare invocation.
+2025-12-03T21:26:21.210Z [INFO] [Tool.prepareInvocation]({result: {
+  "invocationMessage": "Download and install JDK",
+  "confirmationMessages": {
+    "title": "Download and install JDK",
+    "message": "\nJDK 11 is required to build the project, but not found on the machine.\nThis tool will download and install JDK 11 from Microsoft with below settings.\n- **Version**: 11\n- **Vendor**: Microsoft\n- **Url**: https://aka.ms/download-jdk/microsoft-jdk-11.0.28-windows-x64.zip\n- **Destination**: `C:\\Users\\gerar\\.jdk`\n- **Checksum**: SHA256: dd8522b9888504f1c7bee8289384ec194c72f5a631c74ee7c9cd5e17f10203b1\n- **Signature**: https://aka.ms/download-jdk/microsoft-jdk-11.0.28-windows-x64.zip.sig\n- **Public Key**: http://aka.ms/microsoft_jdk_public_key\n"
+  }
+}}).
+2025-12-03T21:26:21.211Z [INFO] ----------------------prepared install_jdk----------------------
+2025-12-03T21:26:43.351Z [INFO] ----------------------invoke install_jdk----------------------
+2025-12-03T21:26:43.351Z [INFO] [Tool.invoke]({name: install_jdk, input: {
+  "sessionId": "20251203212619",
+  "version": "11",
+  "dest": "C:\\Users\\gerar\\.jdk",
+  "reason": "JDK 11 is required to build the project, but not found on the machine."
+}}).
+2025-12-03T21:26:43.353Z [INFO] [Plan.tryStartTask]({tool:install_jdk, nextTask:{type:undefined, tool:undefined}}
+2025-12-03T21:26:43.353Z [INFO] [Plan.tryStartTask]: no next task, create new one.
+2025-12-03T21:26:43.354Z [INFO] [Plan.createTaskAtStart]({tool: install_jdk, input: {
+  "sessionId": "20251203212619",
+  "version": "11",
+  "dest": "C:\\Users\\gerar\\.jdk",
+  "reason": "JDK 11 is required to build the project, but not found on the machine."
+}}).
+2025-12-03T21:26:43.355Z [INFO] [Plan.tryStartTask]: starting task detached
+2025-12-03T21:26:43.355Z [INFO] [Task.start](): Starting task detached
+2025-12-03T21:26:43.356Z [INFO] [Task.start](): Started task detached
+2025-12-03T21:26:43.357Z [INFO] [Tool.invoke] validate GitHub Copilot license.
+2025-12-03T21:26:43.358Z [INFO] [Tool.invoke] do pre-invoke.
+2025-12-03T21:26:43.358Z [INFO] [Tool.invoke] do invoke.
+2025-12-03T21:27:30.561Z [INFO] [Tool.invoke]({result: {
+  "result": {
+    "name": "java",
+    "path": "C:\\Users\\gerar\\.jdk\\jdk-11.0.28\\bin",
+    "version": "11.0.28"
+  },
+  "message": "JDK 11 is installed at C:\\Users\\gerar\\.jdk\\jdk-11.0.28\\bin",
+  "telemetry": {
+    "tool": "JDK",
+    "version": "11"
+  }
+}}).
+2025-12-03T21:27:30.564Z [INFO] [Plan.completeTask](task:{id:<unknown>, type:detached}, result:{
+  "result": {
+    "name": "java",
+    "path": "C:\\Users\\gerar\\.jdk\\jdk-11.0.28\\bin",
+    "version": "11.0.28"
+  },
+  "message": "JDK 11 is installed at C:\\Users\\gerar\\.jdk\\jdk-11.0.28\\bin",
+  "telemetry": {
+    "tool": "JDK",
+    "version": "11"
+  }
+})
+2025-12-03T21:27:30.566Z [INFO] [Task.complete](): Completing task detached
+2025-12-03T21:27:30.574Z [INFO] [Task.complete](): Completed task detached
+2025-12-03T21:27:30.576Z [INFO] [Plan.completeTask]: no next task, create new one.
+2025-12-03T21:27:30.577Z [INFO] [Plan.completeTask]: getting next task.
+2025-12-03T21:27:30.578Z [INFO] [Plan.getNextTaskAtComplete]({task: [Detached] install_jdk, result: {
+  "name": "java",
+  "path": "C:\\Users\\gerar\\.jdk\\jdk-11.0.28\\bin",
+  "version": "11.0.28"
+}}).
+2025-12-03T21:27:30.580Z [INFO] [Plan.completeTask]: next task is {type:undefined, expectedToolName:undefined}.
+2025-12-03T21:27:30.582Z [INFO] [Plan.completeTask]: next task has no instruction. Just return JDK 11 is installed at C:\Users\gerar\.jdk\jdk-11.0.28\bin
+2025-12-03T21:27:30.584Z [INFO] [Tool.invoke]({message: JDK 11 is installed at C:\Users\gerar\.jdk\jdk-11.0.28\bin
+}).
+2025-12-03T21:27:30.586Z [INFO] ----------------------invoked install_jdk----------------------
+2025-12-03T21:27:30.714Z [INFO] [Task.complete](1.1): Completing task generatePlan
+2025-12-03T21:27:30.863Z [INFO] [Task.complete](1.1): Completed task generatePlan
+2025-12-03T21:28:25.777Z [INFO] Project dependencies loaded: [
+  "junit:junit:4.13.2:jar"
+]
+2025-12-03T21:28:25.780Z [INFO] Project modules loaded: [
+  "com.example:PersonaApp:1.0-SNAPSHOT"
+]
+2025-12-03T21:28:25.952Z [ERROR] [Tool.invoke] error occurs when invoking tool generate_upgrade_plan: Error: Failed to get git status for c:\Users\gerar\Desktop\Progetto Ingegneria del Software\Test: "git" non � riconosciuto come comando interno o esterno,
+ un programma eseguibile o un file batch..
+2025-12-03T21:28:25.955Z [INFO] [Task.complete](1): Completing task generatePlan
+2025-12-03T21:28:25.957Z [INFO] ----------------------invoked generate_upgrade_plan----------------------
+2025-12-03T21:28:25.959Z [INFO] [Task.complete](1): Completed task generatePlan
+2025-12-03T21:30:14.282Z [INFO] ---------------------prepare list_jdks----------------------
+2025-12-03T21:30:14.284Z [INFO] [Tool.prepareInvocation]({name: list_jdks, input: {}}).
+2025-12-03T21:30:14.285Z [INFO] [Tool.prepareInvocation] do prepare invocation.
+2025-12-03T21:30:14.287Z [INFO] [Tool.prepareInvocation]({result: {
+  "invocationMessage": "List jdks"
+}}).
+2025-12-03T21:30:14.288Z [INFO] ----------------------prepared list_jdks----------------------

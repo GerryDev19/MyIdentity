@@ -1,0 +1,1 @@
+javac -cp "lib/*;." classes\*.java classes\Anagrafe\*.java .\classes\Accesso\*.java .\classes\StruttureDati\*.java
